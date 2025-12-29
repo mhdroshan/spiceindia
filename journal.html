@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Journal - Spice Bin</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .blog-card {
+            background: white;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+        .blog-img {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+        }
+        .blog-content {
+            padding: 1.5rem;
+        }
+        .blog-date {
+            color: #888;
+            font-size: 0.8rem;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        .blog-content h3 {
+            margin-bottom: 1rem;
+            color: var(--color-primary-black);
+        }
+        .read-more {
+            color: var(--color-primary-green);
+            font-weight: 600;
+            margin-top: 1rem;
+            display: inline-block;
+        }
+    </style>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo">
+            <img src="assets/spice-bin-logo.png" alt="Spice Bin Logo">
+        </a>
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="journal.html" style="color: var(--color-primary-copper);">Journal</a></li>
+            <li><a href="contact.html" class="nav-cta">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header" style="background-image: linear-gradient(rgba(45, 90, 39, 0.9), rgba(45, 90, 39, 0.8)), url('https://loremflickr.com/1920/600/kerala,boat/all');">
+        <h1>The Spice Route</h1>
+        <p>Tales of tradition, culinary arts, and the life of a spice farmer.</p>
+    </header>
+
+    <!-- Blog Grid -->
+    <section>
+        <div class="blog-grid">
+            <!-- Post 1 -->
+            <article class="blog-card">
+                <img src="https://loremflickr.com/600/400/cooking,spices/all" class="blog-img" alt="Cooking">
+                <div class="blog-content">
+                    <span class="blog-date">December 20, 2025</span>
+                    <h3>Why Kerala Pepper is the Best in the World</h3>
+                    <p>The unique terroir of the Malabar coast creates a pungency that cannot be replicated elsewhere.</p>
+                    <a href="#" class="read-more">Read Article &rarr;</a>
+                </div>
+            </article>
+
+             <!-- Post 2 -->
+             <article class="blog-card">
+                <img src="https://loremflickr.com/600/400/herbal,tea/all" class="blog-img" alt="Cardamom Tea">
+                <div class="blog-content">
+                    <span class="blog-date">November 15, 2025</span>
+                    <h3>5 Health Benefits of Green Cardamom</h3>
+                    <p>From digestion to detoxification, discover why this pod is hailed as the Queen of Spices.</p>
+                    <a href="#" class="read-more">Read Article &rarr;</a>
+                </div>
+            </article>
+
+             <!-- Post 3 -->
+             <article class="blog-card">
+                <img src="https://loremflickr.com/600/400/farmer,field/all" class="blog-img" alt="Farmers">
+                <div class="blog-content">
+                    <span class="blog-date">October 05, 2025</span>
+                    <h3>Meet the Hands Behind Your Spices</h3>
+                    <p>An interview with Mr. Raghavan, a third-generation pepper cultivator from Idukki.</p>
+                    <a href="#" class="read-more">Read Article &rarr;</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <!-- Brand Column -->
+            <div class="footer-col">
+                <a href="index.html" class="nav-logo" style="margin-bottom: 2rem; display: block;">
+                    <img src="assets/spice-bin-logo.png" alt="Spice Bin Logo" style="height: 140px;">
+                </a>
+                <p>Exporting the finest Kerala spices to the world since 1985. Experienced, Ethical, and Excellent.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="index.html#spices">Spice Catalog</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Products -->
+            <div class="footer-col">
+                <h4>Our Products</h4>
+                <ul class="footer-links">
+                    <li><a href="contact.html?product=pepper">Black Pepper</a></li>
+                    <li><a href="contact.html?product=cardamom">Green Cardamom</a></li>
+                    <li><a href="contact.html?product=cloves">Cloves</a></li>
+                    <li><a href="contact.html?product=cinnamon">Ceylon Cinnamon</a></li>
+                    <li><a href="contact.html?product=nutmeg">Nutmeg & Mace</a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="footer-col">
+                <h4>Stay Updated</h4>
+                <p>Subscribe to get the latest market insights and harvest reports.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+                    <input type="email" class="newsletter-input" placeholder="Your Email Address" required>
+                    <button type="submit" class="newsletter-btn"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Spice Bin Exports Pvt. Ltd. | All Rights Reserved. | <a href="#" style="color: #777;">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
