@@ -897,6 +897,22 @@ section#spices {
     color: var(--color-white);
 }
 
+.cert-logo {
+    height: 80px;
+    width: auto;
+    max-width: 140px;
+    object-fit: contain;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.cert-logo:hover {
+    transform: scale(1.05);
+}
+
 /* Ancient History Section */
 .history-section {
     background-color: #fdfbf7;
