@@ -757,6 +757,10 @@ section#spices {
         width: 80px;
         height: 80px;
     }
+
+    .db-export-section .story-content-card {
+        margin-right: auto;
+    }
 }
 
 /* Bento Grid - Spices */
@@ -905,7 +909,7 @@ section#spices {
     background: white;
     padding: 10px;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
